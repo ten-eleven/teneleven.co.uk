@@ -1,0 +1,17 @@
+@import "~normalize.css/normalize";
+@import '~typographic/scss/typographic';
+
+$header-ratio       : $golden;
+$body-font          : "adelle";
+$body-font-weight   : 300;
+$body-color         : #666;
+$header-font        : "adelle";
+$header-font-weight : 500;
+$header-color       : #111;
+$min-font           : 12px;
+$max-font           : 20px;
+$min-width          : 100px;
+$max-width          : 1000px;
+
+@include typographic;
+// @include grid-overlay(blue, 2);

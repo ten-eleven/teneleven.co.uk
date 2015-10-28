@@ -6,7 +6,9 @@
     "jsx": "react"
   },
   "files": [
-    "src/components/App/src/App.tsx",
+    "src/components/app/src/App.tsx",
+    "src/components/home/src/Home.tsx",
+    "src/components/opentable-casestudy/src/OpentableCaseStudy.tsx",
     "src/index.tsx",
     "typings/tsd.d.ts"
   ],

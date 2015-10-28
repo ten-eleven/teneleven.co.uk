@@ -1,0 +1,183 @@
+@import "../../../shared/styles/common.scss";
+
+.nav {
+  flex-flow: row nowrap;
+  display:flex;
+  padding:10px 20px;
+}
+
+.logo {
+  font-size:vr-block(0.7);
+  color: #356273;
+  font-weight:600;
+  flex:1;
+  align-self:flex-start;
+  display:inline-block;
+}
+
+.contact-us {
+  color: #08c;
+  align-self: flex-end;
+  text-align:right;
+  flex:1;
+  font-size:vr-block(0.7);
+  text-decoration: none;
+}
+
+.splash {
+  height:90vh;
+  min-height:900px;
+  display:flex;
+  align-items: center;;
+  justify-content: center;
+  padding:0 20px;
+  flex-flow:column;
+
+  &-wrap {
+    align-items: center;
+  }
+
+  &--heading {
+    @include t-h3;
+    text-align:center;
+    color: #356273;
+  }
+
+  &-blurb {
+    display: flex;
+    flex-flow:row wrap;
+    max-width:900px;
+    margin:vr-block(1) auto 0;
+
+    &--item {
+      display:block;
+      max-width:400px;
+      min-width:300px;
+      flex:1 1 1;
+      &:first-child {
+        margin-right:vr-block(1);
+      }
+    }
+  }
+}
+
+%-subtitles {
+  font-size:vr-block(0.4);
+  text-transform: uppercase;
+  font-weight:600;
+  line-height:2.25em;
+  color:#111;
+}
+
+.our-expertise {
+
+  &--title {
+    @extend %-subtitles;
+  }
+  &--blurb {
+    font-size:vr-block(0.5);
+    font-weight:400;
+  }
+
+  &--keywords {
+    margin-top:vr-block(1.2);
+    font-size:vr-block(0.5);
+
+    .keyword {
+      font-size:vr-block(0.5);
+    }
+
+  }
+}
+
+.how-can-help {
+
+  &--title {
+    @extend %-subtitles;
+  }
+
+  &__adding-team, &__team-hire{
+    margin-bottom:vr-block(0.5);
+    &--title {
+      font-size:vr-block(0.5);
+      font-style: italic;
+    }
+
+    &--blurb {
+      font-size:vr-block(0.5);
+      font-weight:400;
+    }
+  }
+
+}
+
+.showcases {
+  margin:0 0 vr-block(1);
+  padding:20px;
+
+  &--heading {
+    text-align:center;
+    color:#356273;
+    margin-top:vr-block(0.3);
+    font-size:vr-block(1);
+    margin-bottom:vr-block(0.5);
+  }
+
+  &--item {
+    margin:0 auto;
+  }
+}
+
+.showcase {
+  max-width:940px;
+
+  &__pinpoint {
+    display:none;
+  }
+
+  &__opentable {
+    @extend .showcase;
+    background:url(../images/opentable-bg.jpg) no-repeat center center;
+    position:relative;
+    .showcase--overlay {
+      background:rgba(0,0,0,0.75);
+      padding:20px 20px 30px;
+    }
+
+    &--logo {
+      margin-top:vr-block(0.4);
+      background:url(../images/opentable-logo.png) no-repeat top left / 151px 34px;
+      width:151px;
+      height:34px;
+    }
+
+    &--blurb {
+      margin-top:vr-block(0.5);
+      font-size:vr-block(0.5);
+      color:darken(white,10);
+      text-rendering: optimizeLegibility;
+      text-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 2px;
+      max-width:470px;
+    }
+
+    &--link {
+      font-size:vr-block(0.5);
+      color:darken(white,10);
+      margin-top:vr-block(0.9);
+      border-bottom:2px solid darken(white,10);
+      display:inline-block;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.availability {
+  text-align: center;
+  @include t-block();
+  padding:0 20px;
+  a {
+    text-decoration: none;
+    color:#08c;
+  }
+}

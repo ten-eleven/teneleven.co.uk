@@ -1,0 +1,80 @@
+@import "../../../shared/styles/common.scss";
+
+.case-study-view {
+
+  &--back-link {
+    text-decoration:none;
+    font-size:36px;
+    color:#08c;
+    position:absolute;
+    top:20px;
+    left:20px;
+  }
+
+  &-header {
+    margin-top:vr-block(1);
+
+    &--logo {
+      background:url(../images/opentable-logo-black.png) no-repeat top left / 151px 34px;
+      width:151px;
+      height:34px;
+      display:block;
+      margin:0 auto;
+    }
+
+    &--length {
+      font-size:vr-block(0.5);
+      text-align:center;
+      margin-top:vr-block(0.40);
+    }
+  }
+
+  &-body {
+    margin-top:vr-block(1);
+    max-width:940px;
+    margin: vr-block(1) auto vr-block(2);
+    padding:0 20px;
+  }
+
+  .case-study-section {
+    &--title {
+      font-weight:600;
+    }
+
+    &--technologies {
+      font-style: italic;
+      font-size: vr-block(0.5);
+    }
+
+    &--media-link:hover img {
+      outline:5px solid #08c;
+    }
+
+    &--image {
+      margin:vr-block(0) 0 vr-block(1);
+    }
+  }
+
+  .image {
+    // hack for now - required by the OpentableCaseStudy.tsx
+    &--floorplan {
+      background:url(../images/floorplan.png) no-repeat;
+    }
+
+    &--shifts {
+      background:url(../images/shifts.png);
+    }
+
+    &--desktop-reservations {
+      background:url(../images/desktop-reservations.png);
+    }
+
+    &--next-1 {
+      background:url(../images/next-1.png) no-repeat;
+    }
+    &--next-2 {
+      background:url(../images/next-2.png) no-repeat;
+    }
+  }
+
+}
