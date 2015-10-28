@@ -7,9 +7,9 @@
 }
 
 .logo {
-  font-size:vr-block(0.7);
-  color: #356273;
-  font-weight:600;
+  font-size:vr-block(0.5);
+  color: #99999a;
+  font-weight:500;
   flex:1;
   align-self:flex-start;
   display:inline-block;
@@ -20,7 +20,7 @@
   align-self: flex-end;
   text-align:right;
   flex:1;
-  font-size:vr-block(0.7);
+  font-size:vr-block(0.5);
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@
   }
 
   &--heading {
-    @include t-h3;
+    @include t-h2;
     text-align:center;
     color: #356273;
   }
@@ -46,20 +46,30 @@
   &-blurb {
     display: flex;
     flex-flow:row wrap;
-    max-width:900px;
-    margin:vr-block(1) auto 0;
+    max-width:1000px;
+    margin:vr-block(2) auto 0;
 
     &--item {
       display:block;
-      max-width:400px;
-      min-width:300px;
-      flex:1 1 1;
-      &:first-child {
-        margin-right:vr-block(1);
+    }
+
+    @media all and (min-width: 870px) {
+      &--item {
+        width:380px;
+        flex:1 1 1;
+        &:first-child {
+          margin-right:25px;
+        }
+        &:last-child {
+          margin-left:25px;
+        }
       }
     }
   }
+
 }
+
+
 
 %-subtitles {
   font-size:vr-block(0.4);
@@ -117,7 +127,7 @@
 
   &--heading {
     text-align:center;
-    color:#356273;
+    color:#333338;
     margin-top:vr-block(0.3);
     font-size:vr-block(1);
     margin-bottom:vr-block(0.5);
