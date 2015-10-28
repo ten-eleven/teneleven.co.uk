@@ -35,7 +35,7 @@ export default class Home extends React.Component<IHomeProps, any> {
 									<li className="keyword">Product Exploration</li>
 									<li className="keyword">Backend Development</li>
 									<li className="keyword">QA Automation</li>
-									<li className="keyword">Continious Integration</li>
+									<li className="keyword">Continous Integration</li>
 								</ul>
 								</div>
 							</div>
