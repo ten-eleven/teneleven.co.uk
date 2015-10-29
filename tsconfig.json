@@ -6,11 +6,12 @@
     "jsx": "react"
   },
   "files": [
-    "src/components/app/src/App.tsx",
-    "src/components/home/src/Home.tsx",
-    "src/components/opentable-casestudy/src/OpentableCaseStudy.tsx",
-    "src/index.tsx",
-    "typings/tsd.d.ts"
+    "./src/components/app/src/App.tsx",
+    "./src/components/home/src/Home.tsx",
+    "./src/components/home/test/unit/HomepageSpec.tsx",
+    "./src/components/opentable-casestudy/src/OpentableCaseStudy.tsx",
+    "./src/index.tsx",
+    "./typings/tsd.d.ts"
   ],
   "filesGlob": [
     "./src/**/*.tsx",
