@@ -7,9 +7,7 @@ module.exports = {
     './src/index.tsx'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: 'http://localhost:3000/'
+    path: path.join(__dirname, 'dist')
   },
   module: {
     loaders: [
@@ -25,9 +23,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png)$/,
-        loaders: [
-            'file-loader?name=[path][name].[ext]'
-        ],
+        loaders: ['null-loader'],
         include: path.join(__dirname, 'src')
       }
     ]
