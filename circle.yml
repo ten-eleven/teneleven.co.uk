@@ -5,3 +5,5 @@ machine:
 dependencies:
   pre:
    - npm install -g karma-cli karma
+  override:
+   - npm install --dev
