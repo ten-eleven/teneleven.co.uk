@@ -3,9 +3,6 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool:"inline-source-map",
-  entry: [
-    './src/index.tsx'
-  ],
   output: {
     path: path.join(__dirname, 'dist')
   },
