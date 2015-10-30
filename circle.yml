@@ -4,6 +4,10 @@ machine:
 
 dependencies:
   pre:
-   - npm install -g karma-cli karma
-  override:
-   - npm install --dev
+   - npm install -g karma-cli
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: teneleven
