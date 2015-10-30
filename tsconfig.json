@@ -6,10 +6,10 @@
     "jsx": "react"
   },
   "files": [
-    "./src/components/app/src/App.tsx",
     "./src/components/home/src/Home.tsx",
     "./src/components/home/test/unit/HomepageSpec.tsx",
     "./src/components/opentable-casestudy/src/OpentableCaseStudy.tsx",
+    "./src/components/site/src/App.tsx",
     "./src/index.tsx",
     "./typings/tsd.d.ts"
   ],
