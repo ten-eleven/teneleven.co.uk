@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
 var WebpackConfig = require("webpack-config");
 var path = require("path");
 
@@ -10,6 +9,7 @@ var env = {
 if (!env.production) {
 
 	var config = new WebpackConfig().extend('webpack.dev.config');
+  var WebpackDevServer = require('webpack-dev-server');
 
 	new WebpackDevServer(webpack(config), {
 		publicPath: config.output.publicPath,
