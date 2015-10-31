@@ -4,9 +4,7 @@ machine:
 
 dependencies:
   pre:
-   - npm install -g karma-cli
-  post:
-   - tsd reinstall --overwrite --save
+   - npm install -g karma-cli tsd
 
 deployment:
   staging:
