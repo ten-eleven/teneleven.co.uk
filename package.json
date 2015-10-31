@@ -10,7 +10,7 @@
   },
   "author": "Joseph McElroy <joe@teneleven.co.uk>",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "assets-webpack-plugin": "^3.1.0",
     "autoprefixer": "^6.0.3",
     "css-loader": "^0.20.2",
@@ -39,11 +39,10 @@
     "typographic": "^2.9.3",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.2",
-    "webpack-config": "^1.1.1",
-    "webpack-dev-server": "^1.12.1"
-  },
-  "dependencies": {
     "express": "^4.13.3",
     "webpack-config": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.12.1"
   }
 }
