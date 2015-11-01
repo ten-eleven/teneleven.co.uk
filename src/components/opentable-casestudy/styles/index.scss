@@ -46,13 +46,27 @@
       font-size: vr-block(0.5);
     }
 
-    &--media-link:hover img {
-      outline:5px solid #08c;
+    &--media-link {
+      text-decoration: none;
+      color: #08c;
+      font-size:vr-block(0.5);
+    }
+
+    &--media-link:hover {
+      text-decoration: underline;
     }
 
     &--image {
       margin:vr-block(0) 0 vr-block(1);
       width:100%;
+    }
+
+    &--media-link-text {
+      text-align: center;
+      margin-top:- vr-block(.74);
+      margin-bottom:vr-block(1);
+      border:none;
+      text-decoration: none;
     }
   }
 
