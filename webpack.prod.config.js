@@ -5,7 +5,6 @@ var SaveAssetsJson = require('assets-webpack-plugin');
 
 
 module.exports = {
-  devtool:"eval",
   entry: [
     './src/index.tsx'
   ],
