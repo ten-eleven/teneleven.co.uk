@@ -13,7 +13,7 @@ export default class Home extends React.Component<IHomeProps, any> {
 		return (
 			<div>
 
-				<div className="nav">
+				<div className="nav" data-qa="logo">
 					<div className="nav--logo logo">
 						ten eleven
 					</div>
