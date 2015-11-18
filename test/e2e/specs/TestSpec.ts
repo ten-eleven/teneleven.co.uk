@@ -1,5 +1,5 @@
-import {Component, Input, Button, List} from "protractor-page-object/src/components/index";
-import {defaults, field} from "protractor-page-object/src/components/ComponentAnnotations";
+import {Component, Input, Button, List} from "../../../node_modules/protractor-page-object/src/components";
+import {defaults, field} from "../../../node_modules/protractor-page-object/src/components/ComponentAnnotations";
 
 class TenElevenPage extends Component {
 
