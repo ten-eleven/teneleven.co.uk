@@ -45,8 +45,7 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^1.12.1",
-    "typescript-require": "^0.2.9",
     "protractor-page-object":"ten-eleven/protractor-page-object",
-    "ts-node":"latest"
+    "ts-node": "^0.5.3"
   }
 }
