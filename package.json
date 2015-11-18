@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "postinstall":"tsd reinstall --overwrite --save; npm run-script build",
-    "start": "node server.js",
+    "start": "node start.js",
     "test": "karma start --single-run",
-    "build": "rm -rf dist && NODE_ENV=production node ./node_modules/webpack/bin/webpack -p --config ./webpack.prod.config.js --progress --profile --colors"
+    "build": "rm -rf dist && NODE_ENV=production node ./node_modules/webpack/bin/webpack -p --config ./webpack.prod.config.js --progress --profile --colors",
+    "test-e2e":"protractor test/e2e/config/protractor.conf.js"
   },
   "author": "Joseph McElroy <joe@teneleven.co.uk>",
   "license": "MIT",
@@ -43,6 +44,9 @@
     "webpack-config": "^1.1.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^1.12.1"
+    "webpack-dev-server": "^1.12.1",
+    "typescript-require": "^0.2.9",
+    "protractor-page-object":"ten-eleven/protractor-page-object",
+    "ts-node":"latest"
   }
 }

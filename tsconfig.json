@@ -16,7 +16,8 @@
   "filesGlob": [
     "./src/**/*.tsx",
     "./src/**/*.ts",
-    "./typings/tsd.d.ts"
+    "./typings/tsd.d.ts",
+    "./test/e2e/specs/**/*.ts"
   ],
   "exclude": []
 }
