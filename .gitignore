@@ -3,3 +3,4 @@ dist
 typings
 .vscode
 npm-debug.log
+test/e2e/generated

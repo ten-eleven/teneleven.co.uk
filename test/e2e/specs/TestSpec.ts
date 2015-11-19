@@ -1,5 +1,4 @@
-import {Component, Input, Button, List} from "../../../node_modules/protractor-page-object/src/components";
-import {defaults, field} from "../../../node_modules/protractor-page-object/src/components/ComponentAnnotations";
+import {Component, Input, Button, List, defaults, field} from "protractor-page-object";
 
 class TenElevenPage extends Component {
 
@@ -11,8 +10,8 @@ class TenElevenPage extends Component {
 describe("example", () => {
   it("should pass", () => {
     let tenElevenPage:TenElevenPage = new TenElevenPage();
-    browser.get("http://localhost:3001")
-    expect(tenElevenPage.logo.isVisible()).toBe(true);
+    browser.get("http://localhost:3000")
+    expect(tenElevenPage.logo.isVisible(20000)).toBe(true);
   })
 
 })

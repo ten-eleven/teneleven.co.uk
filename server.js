@@ -34,9 +34,9 @@ module.exports = {
     		res.sendFile(path.join(__dirname, "index.html"));
     	});
 
-    	var port = Number(process.env.PORT || 3001);
+    	var port = Number(process.env.PORT || 3000);
     	app.listen(port, function () {
-    	  console.log('server running at localhost:3001, go refresh and see magic');
+    	  console.log('server running at localhost:3000, go refresh and see magic');
     	});
 
     }
