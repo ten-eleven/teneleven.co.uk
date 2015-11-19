@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^1.12.1",
-    "protractor-page-object":"ten-eleven/protractor-page-object",
+    "xenon":"ten-eleven/xenon",
     "ts-node": "^0.5.3"
   }
 }

@@ -1,4 +1,4 @@
-import {Component, Input, Button, List, defaults, field} from "protractor-page-object";
+import {Component, Input, Button, List, defaults, field} from "xenon";
 
 @defaults({qa:"nav"})
 class Nav extends Component {
