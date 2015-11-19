@@ -14,9 +14,9 @@ export default class OpentableCaseStudy extends React.Component<ICaseStudyProps,
 
 	render() {
 		return (
-			<div className="case-study-view">
+			<div className="case-study-view" data-qa="case-study-view">
 
-				<Link to="/" className="case-study-view--back-link">←</Link>
+				<Link to="/" className="case-study-view--back-link" data-qa="back-button">←</Link>
 
 				<div className="case-study-view-header">
           <div className="case-study-view-header--logo"></div>

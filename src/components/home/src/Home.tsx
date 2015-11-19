@@ -13,11 +13,11 @@ export default class Home extends React.Component<IHomeProps, any> {
 		return (
 			<div>
 
-				<div className="nav" data-qa="logo">
-					<div className="nav--logo logo">
+				<div className="nav" data-qa="nav">
+					<div className="nav--logo logo" data-qa="nav--logo">
 						ten eleven
 					</div>
-					<a href="mailto:joe@teneleven.co.uk" className="nav--contact-us contact-us">contact us</a>
+					<a data-qa="nav--contact" href="mailto:joe@teneleven.co.uk" className="nav--contact-us contact-us">contact us</a>
 				</div>
 
 				<div className="splash">
@@ -69,11 +69,11 @@ export default class Home extends React.Component<IHomeProps, any> {
 
 					<div className="showcases--heading">Our Client Work</div>
 
-					<div className="showcases--item showcase__opentable">
+					<div className="showcases--item showcase__opentable" data-qa="casestudy--opentable">
 						<div className="showcase--overlay">
 							<div className="showcase__opentable--logo"></div>
 							<div className="showcase__opentable--blurb">OpenTable connects diners, restaurants and their communities around the restaurant table through technology that fuels an extraordinary experience, each and every meal you share.</div>
-							<Link to="/case-studies/opentable" className="showcase__opentable--link">Read More</Link>
+							<Link data-qa="casestudy--link" to="/case-studies/opentable" className="showcase__opentable--link">Read More</Link>
 						</div>
 					</div>
 
