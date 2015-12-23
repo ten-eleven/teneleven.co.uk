@@ -7,14 +7,16 @@
         "experimentalDecorators": true,
         "outDir": "generated",
         "sourceMap": true,
-        "moduleResolution":"node",
+        "moduleResolution": "node",
         "noEmitOnError": true
     },
     "filesGlob": [
-      "./specs/**/*.ts"
+        "./specs/**/*.ts"
     ],
     "files": [
-      "./specs/TestSpec.ts",
-      "../../typings/tsd.d.ts"
-    ]
+        "./specs/TestSpec.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }
