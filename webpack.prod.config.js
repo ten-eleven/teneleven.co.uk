@@ -1,8 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var SaveAssetsJson = require('assets-webpack-plugin');
-
 
 module.exports = {
   entry: [
@@ -33,12 +31,18 @@ module.exports = {
         join_vars: true,
         drop_console: true
       }
-    }),
-    new SaveAssetsJson({
-      path: process.cwd(),
-      filename: 'assets.json'
     })
   ],
+  resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react')
+    },
+    extensions:[".js", ".ts", ".tsx","", ".webpack.js", ".web.js"],
+    fallback: path.join(__dirname, "node_modules")
+  },
+  resolveLoader: {
+    root: path.join(__dirname, "node_modules")
+  },
   module: {
     loaders: [
       {
@@ -49,14 +53,12 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract("style","css!sass"),
-        include: path.join(__dirname, 'src')
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg)$/,
         loaders: [
             'file-loader?name=[path][name].[ext]'
-        ],
-        include: path.join(__dirname, 'src')
+        ]
       }
     ]
   }

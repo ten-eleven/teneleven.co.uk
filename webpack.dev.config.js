@@ -1,22 +1,32 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool:"eval",
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/dev-server',
+    'webpack-hot-middleware/client?reload=true',
     './src/index.tsx'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/static'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
+  resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react')
+    },
+    extensions:[".js", ".ts", ".tsx","", ".webpack.js", ".web.js"],
+    fallback: path.join(__dirname, "node_modules")
+  },
+  resolveLoader: {
+    root: path.join(__dirname, "node_modules")
+  },
   module: {
     loaders: [
       {
@@ -27,14 +37,12 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"],
-        include: path.join(__dirname, 'src')
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg)$/,
         loaders: [
             'file-loader?name=[path][name].[ext]'
         ],
-        include: path.join(__dirname, 'src')
       }
     ]
   }
