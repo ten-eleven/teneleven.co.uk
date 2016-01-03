@@ -15,13 +15,14 @@
   display:inline-block;
 }
 
-.contact-us {
+.nav--contact-us, .nav--github {
   color: #08c;
   align-self: flex-end;
   text-align:right;
   flex:1;
   font-size:vr-block(0.5);
   text-decoration: none;
+  margin-left:25px;
 }
 
 .splash {

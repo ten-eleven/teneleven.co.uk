@@ -17,7 +17,10 @@ export default class Home extends React.Component<IHomeProps, any> {
 					<div className="nav--logo logo" data-qa="nav--logo">
 						ten eleven
 					</div>
-					<a data-qa="nav--contact" href="mailto:joe@teneleven.co.uk" className="nav--contact-us contact-us">contact us</a>
+					<div className="nav--actions">
+						<a data-qa="nav--github" href="http://www.github.com/ten-eleven" className="nav--github">github</a>
+						<a data-qa="nav--contact" href="mailto:joe@teneleven.co.uk" className="nav--contact-us">contact us</a>
+					</div>
 				</div>
 
 				<div className="splash">

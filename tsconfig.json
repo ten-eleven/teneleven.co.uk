@@ -12,7 +12,8 @@
     "./src/components/opentable-casestudy/src/OpentableCaseStudy.tsx",
     "./src/components/site/src/App.tsx",
     "./src/index.tsx",
-    "./typings/tsd.d.ts"
+    "./typings/tsd.d.ts",
+    "./test/e2e/specs/TestSpec.ts"
   ],
   "filesGlob": [
     "./src/**/*.tsx",
@@ -20,5 +21,8 @@
     "./typings/tsd.d.ts",
     "./test/e2e/specs/**/*.ts"
   ],
-  "exclude": []
+  "exclude": [],
+  "atom": {
+    "rewriteTsconfig": true
+  }
 }

@@ -6,7 +6,7 @@
     "start": "node start.js",
     "test": "karma start --single-run",
     "build": "rm -rf dist && NODE_ENV=production node ./node_modules/webpack/bin/webpack -p --config ./webpack.prod.config.js --progress --profile --colors",
-    "test-e2e":"rm -rf test/e2e/generated; tsc -p test/e2e; protractor test/e2e/config/protractor.conf.js"
+    "test-e2e": "rm -rf test/e2e/generated; tsc -p test/e2e; protractor test/e2e/config/protractor.conf.js"
   },
   "author": "Joseph McElroy <joe@teneleven.co.uk>",
   "license": "MIT",
@@ -43,8 +43,9 @@
     "webpack-config": "^1.1.1"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^1.7.0",
+    "ts-node": "^0.5.3",
     "webpack-dev-server": "^1.12.1",
-    "xenon":"ten-eleven/xenon",
-    "ts-node": "^0.5.3"
+    "xenon": "ten-eleven/xenon"
   }
 }
